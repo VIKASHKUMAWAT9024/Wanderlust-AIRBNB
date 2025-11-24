@@ -22,7 +22,9 @@ const User=require('./models/user.js');
 
 
 // Routes
-
+app.get("/", (req, res) =>  {
+ res.redirect("/listings")
+})
 const reviewsRouter =require("./routes/review.js");
 const listingsRouter =require("./routes/listing.js");
 const usersRouter =require("./routes/user.js");

@@ -49,7 +49,9 @@ body{ font-family: "Plus Jakarta Sans", sans-serif !important; display: flex; fl
   .fa-compass {
     font-size: 1.6rem;
   }
-
+  .f-info{
+    display: inline;
+  }
   .nav-link {
     font-size: 0.9rem;
     margin: 0.3rem 0;
