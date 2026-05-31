@@ -54,11 +54,14 @@ body {
 
 .f-info-socials {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .f-info-socials i {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -69,14 +72,17 @@ body {
 }
 
 .f-info-brand {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
     font-weight: 500;
     color: #222;
 }
 
 .f-info-links {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .f-info-links a {
@@ -89,6 +95,26 @@ body {
     text-decoration: underline;
 }
 
+/* Mobile */
+
+@media (max-width: 768px) {
+    .f-info {
+        padding: 1rem;
+        gap: 0.6rem;
+    }
+
+    .f-info-socials {
+        gap: 0.7rem;
+    }
+
+    .f-info-links {
+        gap: 0.7rem;
+    }
+
+    .f-info-links a {
+        font-size: 0.9rem;
+    }
+}
 /* Cards */
 
 .listing-card {
@@ -229,4 +255,5 @@ body {
     #map {
         height: 350px;
     }
+    
 }
